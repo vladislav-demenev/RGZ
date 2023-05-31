@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Основные финансовые показатели - Alibaba Group</title>
+  <script>
+    function showCurs() {
+
+      let curs = [98.05, 100.59, 98.21, 102.96, 101.59, 99.91, 92.59, 95.35, 94.47, 96.59, 95.46, 93.38, 90.92, 89.26, 86.79, 83.7, 83.24, 84.31, 84.7, 84.28];
+      let cursTable = document.getElementById('TableCurs');
+      
+      let sum = 0;
+      for (let i = 0; i<curs.length; i++) {
+          sum = sum + curs[i];
+      }
+      let n = sum / curs.length;
+      let j = 0;
+      for (let b = 0; b<curs.length; b++) {
+      j = j + ((curs[b]-n)**2)
+      }
+      let maxCurs = Math.max(...curs);
+      let minCurs = Math.min(...curs);
+      document.getElementById('max').innerHTML = 'Максимльное значение: ' + maxCurs;
+      document.getElementById('min').innerHTML = 'Минимальное значение: ' + minCurs;
+      document.getElementById('show_standard_deviation').innerHTML = "Среднеквадратическое отклонение: " + Math.sqrt(j).toFixed(2);
+  }
+  </script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <img style="width: 100px; margin: 10px 70px 0px 50px" src="https://www.tadviser.ru/images/4/46/Alibaba-logo.png" alt="Логотип">
+        <li><a href="index.html">О компании</a></li>
+        <li><a style="color: red" class="active" href="financi.html">Основные финансовые показатели</a></li>
+        <li><a href="kontact.html">Контактные данные</a></li>
+        <li><a href="video.html">Видео</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="zag">Основные финансовые показатели - Alibaba Group</h1>
+
+    <h3 class="zag2">Капитализация на конец апреля</h2>
+    <p class="text">658  млрд. $</p>
+
+    <h3 class="zag2">Общее число акций</h2>
+    <p class="text">2 705,64 млн шт.</p>
+
+    <h2 class="zag2">Цены закрытия за апрель</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><p><strong>Дата</strong></p></td>
+          <td><p><strong>Цена закрытия ($)</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>03.04.2023</strong></p></td>
+          <td><p><strong>98,05</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>04.04.2023</strong></p></td>
+          <td><p><strong>100,59</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>05.04.2023</strong></p></td>
+          <td><p><strong>98,21</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>06.04.2023</strong></p></td>
+          <td><p><strong>102,96</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>07.04.2023</strong></p></td>
+          <td><p><strong>101,59</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>10.04.2023</strong></p></td>
+          <td><p><strong>99,91</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>11.04.2023</strong></p></td>
+          <td><p><strong>92,59</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>12.04.2023</strong></p></td>
+          <td><p><strong>95,35</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>13.04.2023</strong></p></td>
+          <td><p><strong>94,47</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>14.04.2023</strong></p></td>
+          <td><p><strong>96,59</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>17.04.2023</strong></p></td>
+          <td><p><strong>95,46</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>18.04.2023</strong></p></td>
+          <td><p><strong>93,38</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>19.04.2023</strong></p></td>
+          <td><p><strong>90,92</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>20.04.2023</strong></p></td>
+          <td><p><strong>89,26</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>21.04.2023</strong></p></td>
+          <td><p><strong>86,79</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>24.04.2023</strong></p></td>
+          <td><p><strong>83,7</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>25.04.2023</strong></p></td>
+          <td><p><strong>83,24</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>26.04.2023</strong></p></td>
+          <td><p><strong>84,31</strong></p></td>
+        </tr>
+        <tr style="background-color: #ffcd94">
+          <td><p><strong>27.04.2023</strong></p></td>
+          <td><p><strong>84,7</strong></p></td>
+        </tr>
+        <tr>
+          <td><p><strong>28.04.2023</strong></p></td>
+          <td><p><strong>84,28</strong></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="zag2" id="curs" onclick="showCurs()">Курс акций Alibaba Group</button>
+    <div class="zag2" id="middlenum"></div>
+    <div class="zag2"id="max"></div>
+    <div class="zag2" id="min"></div>
+    <div class="zag2" id="show_standard_deviation"></div>
+
+    <hr>
+  </main>
+  <footer style="margin-top: 0%;">
+    <div style="display: inline-block;">
+      <div class="text" style= "margin-bottom:10px;">Горячая линия</div>
+      <div class="zag2">
+        (+86) 571-8502-2088  - Гонконг
+      </div>
+    </div>
+    <div class="text">   © 1999—2023 Alibaba Group
+    </div>
+  </footer>
+</body>
+</html>
+
